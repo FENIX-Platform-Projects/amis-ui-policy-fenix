@@ -1,0 +1,18 @@
+[submodule "submodules/fenix-ui-dashboard"]
+	path = submodules/fenix-ui-dashboard
+	url = ../../FENIX-Platform/fenix-ui-dashboard
+[submodule "submodules/fenix-ui-filter"]
+	path = submodules/fenix-ui-filter
+	url = ../../FENIX-Platform/fenix-ui-filter.git
+[submodule "submodules/fenix-ui-common"]
+	path = submodules/fenix-ui-common
+	url = ../../FENIX-Platform/fenix-ui-common.git
+[submodule "submodules/fenix-ui-chart-creator"]
+	path = submodules/fenix-ui-chart-creator
+	url = ../../FENIX-Platform/fenix-ui-chart-creator
+[submodule "submodules/fenix-ui-menu"]
+	path = submodules/fenix-ui-menu
+	url = ../../FENIX-Platform/fenix-ui-menu.git
+[submodule "submodules/fenix-ui-olap"]
+	path = submodules/fenix-ui-olap
+	url = ../../FENIX-Platform/fenix-ui-olap.git
