@@ -1,52 +1,49 @@
 {
   "items": [
-//    {
-//      "attrs": {
-//        "id": "home",
-//        "class": "home-menu-item"
-//      },
-//      "target": "#home",
-//      "label": {
-//        "EN": "Home"
-//      }
-//    }
-//    {
-//      "attrs": {
-//        "id": "profile"
-//      },
-//      "target": "#profile",
-//      "label": {
-//        "EN": "Country Profile"
-//      }
-//    },
-//    {
-//      "attrs": {
-//        "id": "datamgmt"
-//      },
-//      "a_attrs": {
-//        "rel": "external"
-//      },
-//      "target": "datamgmt.html",
-//      "label": {
-//        "EN": "Data Management"
-//      }
-//    },
-//    {
-//      "attrs": {
-//        "id": "analysis"
-//      },
-//      "target": "#analysis",
-//      "label": {
-//        "EN": "Analysis & Download"
-//      }
-//    },
+    {
+      "attrs": {
+        "id": "home",
+        "class": "home-menu-item"
+      },
+      "target": "#home",
+      "label": {
+        "EN": "POLICY HOME"
+      }
+    },
     {
       "attrs": {
         "id": "domain"
       },
       "target": "#domains",
       "label": {
-        "EN": "Browse by Domain"
+        "EN": "POLICIES AT A GLANCE"
+      }
+    },
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "#analysis",
+      "label": {
+        "EN": "QUERY AND DOWNLOAD"
+      }
+    },
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "#analysis",
+      "label": {
+        "EN": "RESOURCES"
+      }
+    },
+    {
+      "attrs": {
+        "id": "analysis"
+      },
+      "target": "#analysis",
+      "label": {
+        "EN": "DATA MANAGEMENT"
       }
     }
   ],
@@ -65,6 +62,14 @@
       },
       "label": {
         "EN": "LOGOUT"
+      }
+    },
+    {
+      "attrs": {
+        "id": "login"
+      },
+      "label": {
+        "EN": "AMIS HOME"
       }
     }
   ],

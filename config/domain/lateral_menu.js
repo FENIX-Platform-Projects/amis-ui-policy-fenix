@@ -4,69 +4,97 @@ define({
         "multiple": false,
         "data": [
             {
-                "id": "demographic",
+                "id": "biofuelsPolicies",
                 "state": {
                     "opened": true
                 },
                 "children": [
                     {
-                        "id": "population"
+                        "id": "biofuelsPoliciesFreqGraph"
                     },
                     {
-                        "id": "education"
-                    },
-                    {
-                        "id": "health"
-                    },
-                    {
-                        "id": "labour"
+                        "id": "biofuelsPoliciesTimeSeries",
+                        "state": {
+                            "opened": true
+                        },
+                        "children": [
+                            {
+                                "id": "biofuelsPoliciesGraph",
+                            },
+                            {
+                                "id": "biofuelsPoliciesDownload"
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "id": "economics",
+                "id": "biofuelsPoliciesDetailed",
                 "state": {
                     "opened": true
                 },
                 "children": [
                     {
-                        "id": "balance_of_payments"
+                        "id": "biofuelsPoliciesDetailedFreqGraph"
                     },
                     {
-                        "id": "gdp"
-                    },
-                    {
-                        "id": "monetary_statistics"
-                    },
-                    {
-                        "id": "financial_flows"
-                    },
-                    {
-                        "id": "public_finance"
-                    },
-                    {
-                        "id": "debt"
-                    },
-                    {
-                        "id": "inflation"
-                    },
-                    {
-                        "id": "energy"
-                    },
-                    {
-                        "id": "tourism"
-                    },
-                    {
-                        "id": "infrastructure"
-                    },
-                    {
-                        "id": "production",
+                        "id": "biofuelsPoliciesDetailedTimeSeries",
+                        "state": {
+                            "opened": true
+                        },
                         "children": [
                             {
-                                "id": "agriculture_production"
+                                "id": "biofuelsPoliciesDetailedGraph",
                             },
                             {
-                                "id": "mining_production"
+                                "id": "biofuelsPoliciesDetailedDownload"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "importTariffs",
+                "state": {
+                    "opened": true
+                },
+                "children": [
+                    {
+                        "id": "importTariffsGraph"
+                    }
+                ]
+            },
+            {
+                "id": "exportSubsidies",
+                "state": {
+                    "opened": true
+                },
+                "children": [
+                    {
+                        "id": "exportSubsidiesGraph"
+                    }
+                ]
+            },
+            {
+                "id": "exportRestrictions",
+                "state": {
+                    "opened": true
+                },
+                "children": [
+                    {
+                        "id": "exportRestrictionsFreqGraph"
+                    },
+                    {
+                        "id": "exportRestrictionsTimeSeries",
+                        "state": {
+                            "opened": true
+                        },
+                        "children": [
+                            {
+                                "id": "exportRestrictionsGraph",
+                            },
+                            {
+                                "id": "exportRestrictionsDownload"
                             }
                         ]
                     }

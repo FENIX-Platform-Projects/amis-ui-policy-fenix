@@ -21,7 +21,9 @@ define(function () {
         TOP_MENU_AUTH_MODE_HIDDEN_ITEMS: ['login'],
         TOP_MENU_PUBLIC_MODE_HIDDEN_ITEMS: ['datamgmt', 'logout'],
 
-        SECURITY_NOT_AUTHORIZED_REDIRECTION_LINK: "domain"
+        SECURITY_NOT_AUTHORIZED_REDIRECTION_LINK: "domain",
+
+        ENVIRONMENT : "develop"
 
     };
 });
