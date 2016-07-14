@@ -1,0 +1,76 @@
+/* Footer */
+
+
+footer.container{
+  background-color: $footer-bg;
+  color: white;
+
+  a{
+    color: $fenix-text;
+    line-height: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+  }
+
+  a:link,
+  a:visited,
+  a:focus,
+  a:active{
+    text-decoration: none;
+
+  }
+
+  a:hover{
+    //width: 100%;
+    //
+    //background-color: rgba(255,255,255,0.2);
+    //color: white;
+    //@include animate;
+  }
+
+
+  h4{
+    color:$footer-text;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+}
+
+.social-holder{
+  display: inline-block;
+  width: 19%;
+  padding: 3px 2px;
+}
+
+
+
+
+/* Ipad */
+@media (min-width: 768px) and (max-width: 990px) {
+
+  .social-holder{
+    display: inline-block;
+    width: 20%;
+    padding: 3px 2px;
+  }
+
+}
+
+/* Iphone */
+
+@media (max-width: 767px) {
+
+
+  .social-holder{
+    display: inline-block;
+    width: 15%;
+    margin: 3px;
+  }
+
+
+  /* End of the iPhone media query*/
+
+}
+

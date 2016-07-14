@@ -1,0 +1,129 @@
+/* Top Menu */
+
+
+.topmenu{
+  .topmenu-buttons-holder{
+    padding: 0;
+  }
+}
+
+.navbar{
+  min-height: 0;
+}
+
+.navbar-default{
+  background-color: transparent;
+  border-top: 1px solid $fenix-light-hr;
+  border-bottom: 3px solid $fx-cool-blue;
+
+
+
+  > .container-fluid {
+
+    padding-left: 0;
+
+  }
+
+  .navbar-nav{
+
+
+
+
+    li{
+
+
+
+
+      a{
+
+        border-right: 1px solid $fenix-light-hr;
+        padding: 8px 15px;
+        font-size: 14px;
+
+
+
+
+      }
+
+
+    }
+
+  }
+
+  .fx-ul-right{
+    li{
+      a{
+        border-right-width:0;
+        border-left: 1px solid $fenix-light-hr;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+  background-color: white;
+  color: $fx-cool-blue;
+  border-bottom-width: 0;
+position: relative;
+
+
+  &:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: $fx-cool-blue;
+    left: 0;
+
+
+  }
+
+
+}
+
+/*//////////////////////////////////////////// Navbar Media queries */
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+}
+
+@media (max-width: 767px) {
+
+
+  .navbar-default{
+
+
+
+
+    .navbar-nav{
+
+
+      li{
+
+        a{
+          padding-left:30px;
+
+        }
+
+
+      }
+
+    }
+
+
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: $fx-cool-blue;
+    color: white;
+
+    &:before{
+      background-color: transparent;
+    }
+  }
+
+}

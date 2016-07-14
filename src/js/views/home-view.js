@@ -684,4 +684,3 @@ define([
 
     return HomeView;
 });
-

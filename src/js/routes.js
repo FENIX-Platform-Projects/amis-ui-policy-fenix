@@ -10,7 +10,7 @@ define(function () {
         //match('profile', 'countries#show');
         //match('profile/:id', 'profile#show');
         match('domains', 'domain#show');
-        match('domains/:id', 'domain#show');
+        //match('domains/:id', 'domain#show');
         //match('analysis', 'analysis#show');
 
         //TODO to check

@@ -21,4 +21,3 @@ define([
 
     return DomainController;
 });
-

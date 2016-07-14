@@ -1,0 +1,112 @@
+<div>
+
+    <section data-dashboard="resume">
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div id="country-map-container" style="	height: 400px; width: 100%;">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+
+                <h1 class="info-title">MAIN INFORMATION</h1>
+
+
+                <ul class="main-information list-inline list-unstyled">
+
+                    <li>
+                        <h4 class="label">
+                            <!--<span class="fx-widget-icons icojam_ancient_building"></span>-->
+                            Capital City
+                        </h4>
+
+                        <p>{{ capital_city }}</p>
+                    </li>
+
+                    <li>
+                        <h4 class="label">
+                            GAUL code
+                        </h4>
+
+                        <p>{{ gaul_code }}</p>
+                    </li>
+
+                    <li>
+                        <h4 class="label">
+                            Area in sq. km
+                        </h4>
+
+                        <p>{{ area }}</p>
+                    </li>
+
+                    <li>
+                        <h4 class="label">
+                            Currency
+                        </h4>
+
+                        <p>{{ currency }}</p>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section data-dashboard="biofuelsPoliciesFreqGraph">
+             <div data-role='filter-block' class="domainfilter-no-border">
+
+
+                    <h2 class="filter-title">Frequency of biofuel policies - disaggregated by policy type</h2>
+
+                    <div class="row">
+
+                        <div class="col-xs-10 domain-filter-holder">
+
+                            <div id="filter-container" class="row">
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <button id="filter-submit" class="btn btn-primary btn-block pull-right filter-go-btns">Filter</button>
+                        </div>
+                    </div>
+
+                </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div data-item="biofuelsPoliciesFreqGraph-1"></div>
+            </div>
+        </div>
+
+    <!--
+        <div class="row">
+            <div class="col-xs-12">
+                <h2> {{biofuelsPoliciesGraph_title}} </h2>
+                <div data-item="population-2" style="height:400px"></div>
+            </div>
+        </div>
+    -->
+      </section>
+
+      <section data-dashboard="biofuelsPoliciesGraph">
+
+          <div class="row">
+              <div class="col-xs-12">
+                    <h2> {{biofuelsPoliciesGraph_title}} </h2>
+                  <div data-item="biofuelsPoliciesGraph-1"></div>
+              </div>
+          </div>
+        </section>
+</div>

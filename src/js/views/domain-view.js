@@ -95,7 +95,8 @@ define([
 
                 }, this));
 
-            this._printDashboard('population');
+            //this._printDashboard('population');
+            this._printDashboard('biofuelsPoliciesFreqGraph');
 
         },
 
@@ -125,6 +126,8 @@ define([
         },
 
         _printDashboard: function (item) {
+            console.log("In print Dashboard ")
+            console.log(item)
 
             this._printDashboardBase(item);
 
@@ -134,6 +137,8 @@ define([
             if (conf && !_.isEmpty(conf)) {
                 this._renderDashboard(conf);
             }
+
+            console.log(filterConfig)
 
             if (!_.isEmpty(filterConfig)) {
                 this.$el.find(s.FILTER_BLOCK).show();
@@ -289,4 +294,3 @@ define([
 
     return DomainView;
 });
-
