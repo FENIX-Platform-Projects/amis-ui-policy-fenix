@@ -4,12 +4,12 @@ define([
     'backbone',
     'underscore',
     'controllers/base/controller',
-    'views/policiesAtAglance-view'
+    'views/resources-view'
 ], function ($, Backbone, _, Controller, View) {
 
     'use strict';
 
-    var PoliciesAtAglanceController = Controller.extend({
+    var ResourcesController = Controller.extend({
 
         show: function (params) {
 
@@ -19,5 +19,5 @@ define([
         }
     });
 
-    return PoliciesAtAglanceController;
+    return ResourcesController;
 });

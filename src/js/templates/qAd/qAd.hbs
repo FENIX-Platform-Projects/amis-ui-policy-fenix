@@ -1,0 +1,68 @@
+<h1>{{qAd_title}}</h1>
+<h4>{{qAd_descrip}}</h4>
+<hr>
+<div class="row">
+    <div class="intro-logo-holder col-xs-12">
+        <div id="qAd-content">
+            <div class='row'>
+                <div class='col-xs-12'>
+                    <div class='note-tabs'>
+                        <ul class='nav nav-tabs'>
+                            <li class='active'><a href='#panel_standard_download' data-toggle='tab' class='fx_header_title_small'>{{qAd_interactive_download}}</a></li>
+                            <li><a href='#panel_bulk_download' data-toggle='tab' class='fx_header_title_small'>{{qAd_bulk_download}}</a></li>
+                        </ul>
+                        <div class='tab-content'>
+                            <div id='panel_standard_download' class='tab-pane active'>
+                                <div >
+                                    <div id="filter-container">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button id="filter-submit" class="btn btn-default pull-right filter-go-btns">{{qAd_preview}}</button>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-xs-12'>
+                                            <div class='note-tabs'>
+                                                <ul id='test' class='nav nav-tabs'>
+                                                    <li class='active'><a href='#standard_preview' id ='pane1' data-toggle='tab' class='fx_header_title_small'>{{qAd_preview}}</a></li>
+                                                </ul>
+                                                <div class='tab-content'>
+                                                    <div id="dashboard-content"></div>
+                                                    <div id='standard_preview' class='tab-pane active'>
+                                                        <div id="standard_preview_jqxgrid"></div>
+                                                    </div>
+                                                </div><!-- /.tab-content -->
+                                            </div><!-- /.tabbable -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div id='panel_bulk_download' class='tab-pane'>
+                                <div id='bulk_download_container'>
+                                   <br>
+                                    <div class='row'>
+                                        <div class='col-xs-12 col-sm-12 col-md-8 col-lg-8'><div class="amis-step-title-text">{{qAd_available_downloads}}</div>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-xs-2 col-sm-2 col-md-4 col-lg-4'></div>
+                                        <div class='col-xs-10 col-sm-10 col-md-8 col-lg-8'>
+                                        <div style='margin-top: 10px;' id='allData_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_AllData.zip'>{{qAd_all_data}}</a></div>
+                                        <div style='margin-top: 10px;' id='biofuelData_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_BiofuelData.zip'>{{qAd_biofuel_data}}</a></div>
+                                        <div style='margin-top: 10px;' id='agriculturalData_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_AgricultureData.zip'>{{qAd_agricultural_data}}</a></div>
+                                        <div style='margin-top: 10px;' id='biofuelTrade_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_BiofuelData_trade.zip'>{{qAd_biofuel_trade}}</a></div>
+                                        <div style='margin-top: 10px;' id='bioufuelDomestic_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_BiofuelData_domestic.zip'>{{qAd_biofuel_domestic}}</a></div>
+                                        <!--<div style='margin-top: 10px;' id='agriculturalIm_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_AgricultureData_ImportMeasures.zip'>{{qAd_agricultural_import_measures}}</a></div>-->
+                                        <div style='margin-top: 10px;' id='agriculturalEx_radioButton'><a target='_blank' href='../../../../../policy/docs/query_download/Bulk_AgricultureData_ExportMeasures.zip'>{{qAd_agricultural_export_measures}}</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div><!-- /.tab-content -->
+                    </div><!-- /.tab table -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -4,12 +4,12 @@ define([
     'backbone',
     'underscore',
     'controllers/base/controller',
-    'views/policiesAtAglance-view'
+    'views/qAd-view'
 ], function ($, Backbone, _, Controller, View) {
 
     'use strict';
 
-    var PoliciesAtAglanceController = Controller.extend({
+    var QEDController = Controller.extend({
 
         show: function (params) {
 
@@ -19,5 +19,5 @@ define([
         }
     });
 
-    return PoliciesAtAglanceController;
+    return QEDController;
 });
