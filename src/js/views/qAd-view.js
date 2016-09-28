@@ -321,7 +321,6 @@ define([
             }
         },
 
-
         _unbindPageEventListeners: function () {
 
             this.$filtercontent.off();
