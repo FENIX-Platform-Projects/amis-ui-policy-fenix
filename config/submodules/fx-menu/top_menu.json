@@ -12,27 +12,27 @@
     },
     {
       "attrs": {
-        "id": "domain"
+        "id": "policiesAtAglance"
       },
-      "target": "#domains",
+      "target": "#policiesAtAglance",
       "label": {
         "EN": "POLICIES AT A GLANCE"
       }
     },
     {
       "attrs": {
-        "id": "analysis"
+        "id": "qAd"
       },
-      "target": "#analysis",
+      "target": "#queryAnddownloads",
       "label": {
         "EN": "QUERY AND DOWNLOAD"
       }
     },
     {
       "attrs": {
-        "id": "analysis"
+        "id": "resources"
       },
-      "target": "#analysis",
+      "target": "#resources",
       "label": {
         "EN": "RESOURCES"
       }
