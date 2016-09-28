@@ -1,0 +1,35 @@
+[
+
+  {
+      "name": "filter",
+      "parameters": {
+        "rows": {
+          "commoditydomain": {
+            "codes": [
+              {
+                "uid": "OECD_CommodityDomain",
+                "version": "1.0",
+                "codes": [
+                  "1"
+                ]
+              }
+            ]
+          },
+          "policydomain": {
+            "codes": [
+              {
+                "uid": "OECD_PolicyDomain",
+                "version": "1.0",
+                "codes": [
+                  "1"
+                ]
+              }
+            ]
+          }
+        },
+        "columns" :["policytype"]
+
+      }
+    }
+
+]
