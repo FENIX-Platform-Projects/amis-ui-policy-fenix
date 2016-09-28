@@ -3523,7 +3523,7 @@ define(["moment"],function (moment) {
                             type: "column",
                             x: ["year"], //x axis and series
                             series: ["commodityclass", "policyelement"], //Y dimension
-                            y: ["value_count"],
+                            y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
                             //aggregationFn: {"value": "sum"},
