@@ -16,3 +16,9 @@
 [submodule "submodules/fenix-ui-olap"]
 	path = submodules/fenix-ui-olap
 	url = ../../FENIX-Platform/fenix-ui-olap.git
+[submodule "submodules/fenix-ui-bridge"]
+	path = submodules/fenix-ui-bridge
+	url = ../../FENIX-Platform/fenix-ui-bridge.git
+[submodule "submodules/fenix-ui-reports"]
+	path = submodules/fenix-ui-reports
+	url = ../../FENIX-Platform/fenix-ui-reports.git

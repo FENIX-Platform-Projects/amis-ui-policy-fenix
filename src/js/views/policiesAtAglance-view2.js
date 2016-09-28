@@ -2,22 +2,24 @@
 define([
     'jquery',
     'underscore',
+    'loglevel',
     'views/base/view',
     'config/events',
-    'config/domain/config',
+    'config/policiesAtAglance/config',
     'fx-dashboard/start',
     'fx-filter/start',
     'fx-common/utils',
     'lib/utils',
     'i18n!nls/labels',
-    'text!templates/domain/domain.hbs',
+    'text!templates/policyAtGlance/policyAtGlance.hbs',
+    //'text!templates/domain/domain.hbs',
     'text!templates/domain/dashboard.hbs',
     'text!templates/domain/bases.hbs',
-    'config/domain/lateral_menu',
+    'config/policiesAtAglance/lateral_menu',
     'handlebars',
     'amplify',
     'jstree'
-], function ($, _, View, EVT, PC, Dashboard, Filter, FxUtils, Utils, i18nLabels, template, dashboardTemplate, basesTemplate, LateralMenuConfig, Handlebars) {
+], function ($, _, log, View, EVT, PC, Dashboard, Filter, FxUtils, Utils, i18nLabels, template, dashboardTemplate, basesTemplate, LateralMenuConfig, Handlebars) {
 
     'use strict';
 
@@ -57,7 +59,7 @@ define([
             View.prototype.attach.call(this, arguments);
 
             //update State
-            amplify.publish(EVT.STATE_CHANGE, {menu: 'domain'});
+            amplify.publish(EVT.STATE_CHANGE, {menu: 'policiesAtAglance'});
 
             this._initVariables();
 
@@ -82,6 +84,7 @@ define([
 
                 //Limit selection e select only leafs for indicators
                 .on("select_node.jstree", _.bind(function (e, data) {
+                    console.log("select!!!!")
 
                     if (!data.instance.is_leaf(data.node)) {
 
@@ -90,6 +93,9 @@ define([
                         self.$lateralMenu.jstree(true).open_node(data.node, true);
 
                     } else {
+                        log.info(data)
+                        log.info(data.selected)
+                        log.info(data.selected[0])
                         self._onChangeDashboard(data.selected[0]);
                     }
 
@@ -133,6 +139,7 @@ define([
 
             var conf = this._getDashboardConfig(item),
                 filterConfig = this._getFilterConfig(item);
+            console.log(conf)
 
             if (conf && !_.isEmpty(conf)) {
                 this._renderDashboard(conf);
@@ -150,17 +157,21 @@ define([
         },
 
         _printDashboardBase: function (id) {
+            console.log(id)
 
             //Inject HTML
-            var source = $(basesTemplate).find("[data-dashboard='" + id + "']"),
-                template = Handlebars.compile(source.prop('outerHTML')),
+            var source = $(basesTemplate).find("[data-dashboard='" + id + "']");
+            //console.log(source.prop('outerHTML'))
+            var template = Handlebars.compile(source.prop('outerHTML')),
                 html = template(i18nLabels);
-
+            console.log(html)
             this.$el.find(s.DASHBOARD_CONTENT).html(html);
         },
 
         _onChangeDashboard: function (item) {
 
+            log.info(item)
+            log.info(currentDashboard)
             if (this.currentDashboard !== item) {
                 this.currentDashboard = item;
                 this._printDashboard(item);
@@ -226,7 +237,7 @@ define([
             this._disposeDashboards();
 
             _.each(config, _.bind(function (c) {
-
+console.log(c)
                 this.dashboards.push(new Dashboard(c));
 
             }, this));
