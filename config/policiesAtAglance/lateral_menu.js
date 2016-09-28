@@ -19,7 +19,16 @@ define({
                         },
                         "children": [
                             {
-                                "id": "biofuelsPoliciesGraph",
+                                "id": "biofuelsPoliciesTimeSeriesGraph1",
+                            },
+                            {
+                                "id": "biofuelsPoliciesTimeSeriesGraph2",
+                            },
+                            {
+                                "id": "biofuelsPoliciesTimeSeriesGraph3",
+                            },
+                            {
+                                "id": "biofuelsPoliciesTimeSeriesGraph4",
                             },
                             {
                                 "id": "biofuelsPoliciesDownload"
@@ -44,7 +53,16 @@ define({
                         },
                         "children": [
                             {
-                                "id": "biofuelsPoliciesDetailedGraph",
+                                "id": "biofuelsPoliciesDetailedTimeSeriesGraph1",
+                            },
+                            {
+                                "id": "biofuelsPoliciesDetailedTimeSeriesGraph2",
+                            },
+                            {
+                                "id": "biofuelsPoliciesDetailedTimeSeriesGraph3",
+                            },
+                            {
+                                "id": "biofuelsPoliciesDetailedTimeSeriesGraph4",
                             },
                             {
                                 "id": "biofuelsPoliciesDetailedDownload"
@@ -61,6 +79,9 @@ define({
                 "children": [
                     {
                         "id": "importTariffsGraph"
+                    },
+                    {
+                        "id": "importTariffsDownload"
                     }
                 ]
             },
@@ -72,6 +93,9 @@ define({
                 "children": [
                     {
                         "id": "exportSubsidiesGraph"
+                    },
+                    {
+                        "id": "exportSubsidiesDownload"
                     }
                 ]
             },
@@ -91,7 +115,19 @@ define({
                         },
                         "children": [
                             {
-                                "id": "exportRestrictionsGraph",
+                                "id": "exportRestrictionsTimeSeriesGraph1",
+                            },
+                            {
+                                "id": "exportRestrictionsTimeSeriesGraph2",
+                            },
+                            {
+                                "id": "exportRestrictionsTimeSeriesGraph3",
+                            },
+                            {
+                                "id": "exportRestrictionsTimeSeriesGraph4",
+                            },
+                            {
+                                "id": "exportRestrictionsTimeSeriesGraph5",
                             },
                             {
                                 "id": "exportRestrictionsDownload"
