@@ -50,10 +50,11 @@
   "rightItems": [
     {
       "attrs": {
-        "id": "login"
+        "id": "login",
+        "class":"login-btn"
       },
       "label": {
-        "EN": "LOGIN"
+        "EN": "Login"
       }
     },
     {

@@ -1,6 +1,5 @@
 /* Dist - Index */
 
-
 $fx-ui-common: '../../submodules/fenix-ui-common/';
 
 /* Fenix Common CSS */
@@ -11,7 +10,7 @@ $fx-ui-common: '../../submodules/fenix-ui-common/';
 
 
 /* Fenix Utils*/
-@import '../../submodules/fenix-ui-common/css/fenix-style-no-variables';
+//@import '../../submodules/fenix-ui-common/css/fenix-style-no-variables';
 //@import '../../submodules/fenix-ui-common/css/base/fx-typography';
 @import '../../submodules/fenix-ui-common/css/utils/fx-mixins';
 @import '../../submodules/fenix-ui-common/css/components/fx-icons';
@@ -50,6 +49,7 @@ $fx-ui-common: '../../submodules/fenix-ui-common/';
 /* Components */
 @import '../../src/css/components/breadcrumbs';
 @import '../../src/css/components/footer';
+@import '../../src/css/components/navbar-toggle-animation';
 @import '../../src/css/components/topmenu';
 
 
@@ -58,7 +58,7 @@ $fx-ui-common: '../../submodules/fenix-ui-common/';
 
 /* Pages */
 @import '../../src/css/pages/home';
-@import '../../src/css/pages/analysis';
+//@import '../../src/css/pages/analysis';
 @import '../../src/css/pages/datamgmt';
 @import '../../src/css/pages/methods';
 @import '../../src/css/pages/modules';

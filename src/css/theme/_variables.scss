@@ -11,18 +11,6 @@ $host-menu-height : 40px;
 // Typography
 $small-text : 12px;
 $standard-text-size: 12px;
-$standard-text : normal normal 300 $standard-text-size/normal 'Roboto';
-$standard-text-bold : normal normal 500 14px/normal 'Roboto';
-$standard-text-big : normal normal 300 16px/normal 'Roboto';
-
-$fx-text-h1: normal normal 300 18px/normal 'Roboto';
-$fx-text-h2: normal normal 300 16px/normal 'Roboto';
-$fx-text-h3: normal normal 500 14px/normal 'Roboto';
-$fx-text-h4: normal normal 300 12px/normal 'Roboto';
-
-
-$fx-text-smalltitle-normal: normal normal 400 10px/normal 'Roboto';
-$fx-text-smalltitle-bold: normal normal 700 10px/normal 'Roboto';
 
 // Fenix Colors
 $fenix-standard-blue: rgba(53, 166, 220, 1);
@@ -33,10 +21,12 @@ $fx-cool-alt: #51b5ff;
 $fx-secondary-color: desaturate( $fx-cool-blue, 50% );
 
 $amis-background: #f9f7f3;
+$amis-ultralight-gray: #EEEEEE;
+
+$amis-blue: #2A5D9F;
 
 
-
-$fenix-text: #666666;
+$fenix-text: #333333;
 $fenix-secondary-text: #999999;
 
 $fenix-light-gray: #dddddd;
