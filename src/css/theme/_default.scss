@@ -3,64 +3,10 @@
 body {
   background-color: $amis-background;
   color: $fenix-text;
-  font: $standard-text;
 }
 
-
-/* Fenix Typography */
-
-a{
-  color: $fx-cool-blue;
-
-  &:focus{
-    outline: none;
-  }
-
-  &:active{
-    outline: none;
-  }
-
-}
-
-.dropdown-menu > li > a{
-  font-weight: 300;
-  color:$fenix-text;
-}
-
-h1{
-  font: $fx-text-h1;
-  color: $fx-cool-blue;
-}
-
-h2{
-  font: $fx-text-h2;
-  color: desaturate( $fx-cool-blue, 30% );
-}
-
-h3{
-  font: $fx-text-h3;
-  color: desaturate( $fx-cool-blue, 50% );
-}
-
-h4{
-  font: $fx-text-h4;
-  color: desaturate( $fx-cool-blue, 70% );
-}
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
-  font-family: Roboto;
-  font-weight: 700;
-  color: $fx-cool-blue;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-
-#main-container{
-  position: relative;
-}
 .navbar-brand {
-  background-image: url(../../src/css/img/banner-tag.jpg);
+  background-image: url(../../src/images/banner-tag.jpg);
   width: 270px;
   height: 90px ;
   position: relative;
@@ -68,36 +14,48 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
   background-position: 0 0;
 }
 
+.navbar{
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+
+  > li {
+
+    &.active{
+
+      &:before {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $fx-cool-blue;
+        position: absolute;
+        margin-left: -10px;
+        left: 50%;
+        top: 100%;
+      }
+
+    }
+
+    > a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: "Open Sans Condensed", sans-serif;
+      color: white;
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+
+
+
 .container{
   background-color: white;
 }
 
-
-
-.upper{
-  text-transform: uppercase;
-}
-//
-//.btn{
-//  @include fx-border-radius(0);
-//  height: 25px;
-//  min-width: 100px;
-//  padding: 3px 12px;
-//  font-size: 12px;
-//  text-transform: uppercase;
-//  background-color: transparent;
-//  border: 1px solid $buttons;
-//  color: $buttons;
-//  margin: 3px;
-//
-//  &:hover{
-//    background-color: $superlight-gray;
-//    //border-color: transparent;
-//    border: 1px solid $buttons;
-//    color: $buttons;
-//  }
-//
-//}
 
 
 .container {
@@ -105,36 +63,14 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 }
 
 
+.amis-header{
+  background-image: url(../../src/images/calder-Amis.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
 
 
-//.dashboard-item{
-//  height: 480px;
-//}
+  .banner-links{
+    background-color: white;
+  }
 
-// Radio Button Override for Leaflet
-
-//.fm-box-zindex{
-//  input[type="radio"] + label:before{
-//    content:none;
-//  }
-//
-//  .fm-checkbox-hide{
-//    display: none ;
-//  }
-//
-//  input[type="radio"] + label{
-//    margin: 0;
-//  }
-//
-//  .ui-slider{
-//    margin-top: 5px;
-//
-//    .ui-slider-handle{
-//      height: 20px !important;
-//      width: 20px !important;
-//      background-size: contain !important;
-//      top: -7px!important;
-//    }
-//
-//  }
-//}
+}
