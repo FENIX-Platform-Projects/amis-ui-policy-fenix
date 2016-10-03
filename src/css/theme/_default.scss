@@ -1,7 +1,7 @@
 /* Base style File */
 
 body {
-  background-image: url(../../src/css/img/bg-body.png);
+  background-color: $amis-background;
   color: $fenix-text;
   font: $standard-text;
 }
@@ -60,14 +60,12 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
   position: relative;
 }
 .navbar-brand {
-  background-image: url(../../src/css/img/uneca-logo.jpg);
-  width: 408px;
-  height: 47px ;
+  background-image: url(../../src/css/img/banner-tag.jpg);
+  width: 270px;
+  height: 90px ;
   position: relative;
   background-size: 100% 100%;
   background-position: 0 0;
-  background-color: $fx-cool-blue;
-  margin: 15px 0;
 }
 
 .container{

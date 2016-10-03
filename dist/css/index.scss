@@ -1,5 +1,8 @@
 /* Dist - Index */
 
+
+$fx-ui-common: '../../submodules/fenix-ui-common/';
+
 /* Fenix Common CSS */
 @import '../../submodules/fenix-ui-common/css/themes/fx-variables';
 
@@ -16,7 +19,7 @@
 /* Boostrap Queries */
 @import '../../submodules/fenix-ui-common/css/themes/fx-bootstrap-queries';
 
-$fx-ui-common: '../../submodules/fenix-ui-common/';
+
 
 @import '../../submodules/fenix-ui-common/css/components/fx-icons';
 @import '../../submodules/fenix-ui-common/css/components/fx-dropdown';
@@ -74,6 +77,8 @@ $fx-ui-common: '../../submodules/fenix-ui-common/';
   height: 5000px !important;
 
 }
+
+
 
 
 

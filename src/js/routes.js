@@ -6,7 +6,7 @@ define(function () {
     // `match` is match method of the Router
     return function (match) {
         match('', 'policiesAtAglance#show');
-        //match('home', 'home#show');
+        match('home', 'home#show');
         //match('profile', 'countries#show');
         //match('profile/:id', 'profile#show');
         match('policiesAtAglance', 'policiesAtAglance#show');
