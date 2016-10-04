@@ -138,8 +138,10 @@ require([
                     tweenMax: "{FENIX_CDN}/js/tweenmax/1.18.0/tweenmax.min", // TO BE REVIEWED
                     threejs: "{FENIX_CDN}/js/threejs/4.4/three.min",
                     loglevel: "{FENIX_CDN}/js/loglevel/1.4.0/loglevel",
-
+                    //swiper : '{FENIX_CDN}/js/swiper/3.3.1/dist/js/swiper.jquery.min',
+                    //swiper: "http://fenixrepo.fao.org/cdn/js/swiper/3.0.7/dist/js/swiper.min",
                     //'highcharts': '{FENIX_CDN}/js/highcharts/4.1.6/js/highcharts',
+                    swiper: "../../src/js/lib/idangerous.swiper.min",
 
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
 
@@ -151,9 +153,7 @@ require([
 
                     'webix': 'http://fenixrepo.fao.org/cdn/js/webix/2.2.1/js/webix',
 
-                    'fx-common/config/auth_users': '../../config/auth_users.json',
-
-
+                    'fx-common/config/auth_users': '../../config/auth_users.json'
                 },
 
                 // Underscore and Backbone are not AMD-capable per default,
@@ -209,6 +209,9 @@ require([
                     },
                     jqxwidget: {
                         deps: ["jquery"]
+                    },
+                    swiper: {
+                        deps : ['jquery']
                     }
                 },
                 waitSeconds: 15
