@@ -240,6 +240,32 @@ define(function () {
 
             selectors: {
 
+                // Year: {
+                //
+                //     //className: 'col-md-10',
+                //
+                //     selector: {
+                //         id: "range",
+                //         format : "YYYYMMDD",
+                //         config: {
+                //             type: "double",
+                //             min: +moment(filter.biofuelsPoliciesType.year.min).format("X"),
+                //             max: +moment(filter.biofuelsPoliciesType.year.max).format("X"),
+                //             from: +moment(filter.biofuelsPoliciesType.year.from).format("X"),
+                //             to: +moment(filter.biofuelsPoliciesType.year.to).format("X"),
+                //             prettify: function (num) {
+                //                 return moment(num, "X").format("MM/YYYY");
+                //             }
+                //         }
+                //     },
+                //
+                //     template: {
+                //         title: "Double Range",
+                //         hideSwitch: true,
+                //         hideRemoveButton: true
+                //     }
+                // },
+
                 YearSlider: {
 
                     className: 'col-md-10',
@@ -264,6 +290,7 @@ define(function () {
                     //}]
                     //}
                 },
+
                 YearList: {
                     selector: {
                         id: "dropdown",
