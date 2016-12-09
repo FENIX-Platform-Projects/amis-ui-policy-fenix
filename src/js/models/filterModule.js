@@ -73,15 +73,8 @@ define(function () {
                     args: {
                         uid: "OECD_View_QueryDownload",
                         payloadIncludes: ["commodityDomain", "policyDomain"],
-                        //indexValueColumn : 1,
-                        //indexLabelColumn : 0,
                         body: [{
                             name: "filter",
-                            //"sid": [
-                            //    {
-                            //        "uid": "FilterCommodityPolicy"
-                            //    }
-                            //],
                             parameters: {
                                 rows: {
                                     commoditydomain: {
@@ -102,18 +95,18 @@ define(function () {
                                 columns: ["policytype"]
                             }
                         },
-                            {
-                                "name":"group",
-                                "parameters":{
-                                    "by":[
-                                        "policytype"
+                        {
+                            "name":"group",
+                            "parameters":{
+                                "by":[
+                                    "policytype"
 
-                                    ],
-                                    "aggregations":[
+                                ],
+                                "aggregations":[
 
-                                    ]
-                                }
-                            }]
+                                ]
+                            }
+                        }]
                     }
                 }],
                 policyDomain: [{
@@ -122,15 +115,8 @@ define(function () {
                     args: {
                         uid: "OECD_View_QueryDownload",
                         payloadIncludes: ["commodityDomain", "policyDomain"],
-                        //indexValueColumn : 1,
-                        //indexLabelColumn : 0,
                         body: [{
                             name: "filter",
-                            //"sid": [
-                            //    {
-                            //        "uid": "FilterCommodityPolicy"
-                            //    }
-                            //],
                             parameters: {
                                 rows: {
                                     commoditydomain: {
@@ -151,18 +137,18 @@ define(function () {
                                 columns: ["policytype"]
                             }
                         },
-                            {
-                                "name":"group",
-                                "parameters":{
-                                    "by":[
-                                        "policytype"
+                        {
+                            "name":"group",
+                            "parameters":{
+                                "by":[
+                                    "policytype"
 
-                                    ],
-                                    "aggregations":[
+                                ],
+                                "aggregations":[
 
-                                    ]
-                                }
-                            }]
+                                ]
+                            }
+                        }]
                     }
                 }]
             }
@@ -183,6 +169,156 @@ define(function () {
 
             template: {
                 title: "Policy Measure"
+            },
+
+            dependencies: {
+                commodityDomain: [{
+                    id: "process",
+                    event: "select",
+                    args: {
+                        uid: "OECD_View_QueryDownload",
+                        payloadIncludes: ["commodityDomain", "policyDomain", "policyType"],
+                        body: [{
+                            name: "filter",
+                            parameters: {
+                                rows: {
+                                    commoditydomain: {
+                                        codes: [{
+                                            uid: "OECD_CommodityDomain",
+                                            version: "1.0",
+                                            codes: ["{{{commodityDomain}}}"]
+                                        }]
+                                    },
+                                    policydomain: {
+                                        codes: [{
+                                            uid: "OECD_PolicyDomain",
+                                            version: "1.0",
+                                            codes: ["{{{policyDomain}}}"]
+                                        }]
+                                    },
+                                    policytype: {
+                                        codes: [{
+                                            uid: "OECD_PolicyType",
+                                            version: "1.0",
+                                            codes: ["{{{policyType}}}"]
+                                        }]
+                                    }
+                                },
+                                columns: ["policymeasure"]
+                            }
+                        },
+                            {
+                                "name":"group",
+                                "parameters":{
+                                    "by":[
+                                        "policymeasure"
+
+                                    ],
+                                    "aggregations":[
+
+                                    ]
+                                }
+                            }]
+                    }
+                }],
+                policyDomain: [{
+                    id: "process",
+                    event: "select",
+                    args: {
+                        uid: "OECD_View_QueryDownload",
+                        payloadIncludes: ["commodityDomain", "policyDomain", "policyType"],
+                        body: [{
+                            name: "filter",
+                            parameters: {
+                                rows: {
+                                    commoditydomain: {
+                                        codes: [{
+                                            uid: "OECD_CommodityDomain",
+                                            version: "1.0",
+                                            codes: ["{{{commodityDomain}}}"]
+                                        }]
+                                    },
+                                    policydomain: {
+                                        codes: [{
+                                            uid: "OECD_PolicyDomain",
+                                            version: "1.0",
+                                            codes: ["{{{policyDomain}}}"]
+                                        }]
+                                    },
+                                    policytype: {
+                                        codes: [{
+                                            uid: "OECD_PolicyType",
+                                            version: "1.0",
+                                            codes: ["{{{policyType}}}"]
+                                        }]
+                                    }
+                                },
+                                columns: ["policymeasure"]
+                            }
+                        },
+                            {
+                                "name":"group",
+                                "parameters":{
+                                    "by":[
+                                        "policymeasure"
+
+                                    ],
+                                    "aggregations":[
+
+                                    ]
+                                }
+                            }]
+                    }
+                }],
+                policyType: [{
+                    id: "process",
+                    event: "select",
+                    args: {
+                        uid: "OECD_View_QueryDownload",
+                        payloadIncludes: ["commodityDomain", "policyDomain", "policyType"],
+                        body: [{
+                            name: "filter",
+                            parameters: {
+                                rows: {
+                                    commoditydomain: {
+                                        codes: [{
+                                            uid: "OECD_CommodityDomain",
+                                            version: "1.0",
+                                            codes: ["{{{commodityDomain}}}"]
+                                        }]
+                                    },
+                                    policydomain: {
+                                        codes: [{
+                                            uid: "OECD_PolicyDomain",
+                                            version: "1.0",
+                                            codes: ["{{{policyDomain}}}"]
+                                        }]
+                                    },
+                                    policytype: {
+                                        codes: [{
+                                            uid: "OECD_PolicyType",
+                                            version: "1.0",
+                                            codes: ["{{{policyType}}}"]
+                                        }]
+                                    }
+                                },
+                                columns: ["policymeasure"]
+                            }
+                        },
+                            {
+                                "name":"group",
+                                "parameters":{
+                                    "by":[
+                                        "policymeasure"
+
+                                    ],
+                                    "aggregations":[
+
+                                    ]
+                                }
+                            }]
+                    }
+                }]
             }
         },
 
