@@ -109,7 +109,7 @@ define([
             }
 
             this.filter = new Filter({
-                items: FilterModule,
+                selectors: FilterModule,
                 el: s.FILTER_CONTAINER,
                 //summaryEl: s.ALL_SUMMARY
             });

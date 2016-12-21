@@ -24,7 +24,13 @@ define(function () {
         SECURITY_NOT_AUTHORIZED_REDIRECTION_LINK: "domain",
 
         //ENVIRONMENT : "develop"
-        ENVIRONMENT : "production"
+        ENVIRONMENT : "production",
+
+        //New
+
+        cache: false,
+
+        lang: "EN"
 
     };
 });

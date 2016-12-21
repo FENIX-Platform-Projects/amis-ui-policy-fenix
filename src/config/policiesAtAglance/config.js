@@ -1,6 +1,6 @@
 /*global define*/
 
-define(["moment"],function (moment) {
+define(["moment", "highcharts"],function (moment, Highcharts) {
 
     'use strict';
 
@@ -323,8 +323,8 @@ define(["moment"],function (moment) {
                             type: "double",
                             min: +moment(filter.biofuelsPoliciesType.year.min).format("X"),
                             max: +moment(filter.biofuelsPoliciesType.year.max).format("X"),
-                            from: +moment(filter.biofuelsPoliciesType.year.from).format("X"),
-                            to: +moment(filter.biofuelsPoliciesType.year.to).format("X"),
+                            //from: +moment(filter.biofuelsPoliciesType.year.from).format("X"),
+                            //to: +moment(filter.biofuelsPoliciesType.year.to).format("X"),
                             prettify: function (num) {
                                 return moment(num, "X").format("MM/YYYY");
                             }
@@ -350,10 +350,10 @@ define(["moment"],function (moment) {
                             type: "column",
                             x: ["commodityclass"], //x axis and series
                             series: ["policytype"], //Y dimension
-                            y: ["value_count"],
+                            y: ["VALUE0"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
                             config: {
                                 "chart": {
                                     "borderWidth": 2,
@@ -556,7 +556,7 @@ define(["moment"],function (moment) {
                                 "parameters": {
                                     "column": {
                                         "dataType": "number",
-                                        "id": "value_count",
+                                        "id": "VALUE0",
                                         "title": {
                                             "EN": "Value"
                                         },
@@ -575,7 +575,7 @@ define(["moment"],function (moment) {
                                     "aggregations": [
                                         {
                                             "columns": [
-                                                "value_count"
+                                                "VALUE0"
                                             ],
                                             "rule": "SUM"
                                         }
@@ -607,7 +607,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -910,7 +910,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -1213,7 +1213,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -1516,7 +1516,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -1883,10 +1883,10 @@ define(["moment"],function (moment) {
                             type: "column",
                             x: ["commodityclass"], //x axis and series
                             series: ["policymeasure"], //Y dimension
-                            y: ["value_count"],
+                            y: ["VALUE0"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
                             config: {
                                 "chart": {
                                     "borderWidth": 2,
@@ -2100,7 +2100,7 @@ define(["moment"],function (moment) {
                                 "parameters": {
                                     "column": {
                                         "dataType": "number",
-                                        "id": "value_count",
+                                        "id": "VALUE0",
                                         "title": {
                                             "EN": "Value"
                                         },
@@ -2119,7 +2119,7 @@ define(["moment"],function (moment) {
                                     "aggregations": [
                                         {
                                             "columns": [
-                                                "value_count"
+                                                "VALUE0"
                                             ],
                                             "rule": "SUM"
                                         }
@@ -2178,7 +2178,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -2518,7 +2518,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -2858,7 +2858,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -3198,7 +3198,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -3655,7 +3655,7 @@ define(["moment"],function (moment) {
                                 "parameters": {
                                     "column": {
                                         "dataType": "number",
-                                        "id": "value_count",
+                                        "id": "VALUE0",
                                         "title": {
                                             "EN": "Value"
                                         },
@@ -3676,7 +3676,7 @@ define(["moment"],function (moment) {
                                     "aggregations": [
                                         {
                                             "columns": [
-                                                "value_count"
+                                                "VALUE0"
                                             ],
                                             "rule": "SUM"
                                         },
@@ -3732,7 +3732,7 @@ define(["moment"],function (moment) {
                         ],
                         default:["37"],
                         config : {
-                            placeholder: "Please select a Year",
+                            placeholder: "Please select a Country",
                             maxItems: 1
                         }
                     },
@@ -3741,7 +3741,7 @@ define(["moment"],function (moment) {
                         title: "Policy Type"
                     }
                 },
-                policyType: {
+                commodityClass: {
 
                     selector: {
                         id: "dropdown",
@@ -3762,7 +3762,7 @@ define(["moment"],function (moment) {
                             {value: "17", label: "Soybeans + Wheat"},
                             {value: "1", label: "Wheat"}
                         ],
-                        default:["8"],
+                        default:["9"],
                         config : {
                             placeholder: "Please select a Commodity Class",
                             maxItems: 1
@@ -3784,7 +3784,7 @@ define(["moment"],function (moment) {
                         config: {
                             type: "line",
                             x: ["startYear"], //x axis and series
-                            series: ["policymeasure"], //Y dimension
+                            series: ["element"], //Y dimension
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
@@ -3910,7 +3910,7 @@ define(["moment"],function (moment) {
                                 }
                             }
                         }, // :type-creator config
-                        postProcess: [
+                        postProcess:  [
                             {
                                 "name": "filter",
                                 "sid": [
@@ -3921,7 +3921,7 @@ define(["moment"],function (moment) {
                                 "parameters": {
                                     "columns": [
                                         "commodityclass",
-                                        "policymeasure",
+                                        "element",
                                         "country",
                                         "startYear",
                                         "value",
@@ -3973,6 +3973,26 @@ define(["moment"],function (moment) {
                                             ]
                                         }
                                     }
+                                }
+                            },
+                            {
+                                "name": "group",
+                                "parameters": {
+                                    "by": [
+                                        "commodityclass",
+                                        "element",
+                                        "country",
+                                        "startYear",
+                                        "um"
+                                    ],
+                                    "aggregations": [
+                                        {
+                                            "columns": [
+                                                "value"
+                                            ],
+                                            "rule": "SUM"
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -4045,10 +4065,10 @@ define(["moment"],function (moment) {
                             type: "column",
                             x: ["commodityclass"], //x axis and series
                             series: ["policymeasure"], //Y dimension
-                            y: ["value_count"],
+                            y: ["VALUE0"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
                             config: {
                                 "chart": {
                                     "borderWidth": 2,
@@ -4276,7 +4296,7 @@ define(["moment"],function (moment) {
                                     "parameters": {
                                         "column": {
                                             "dataType": "number",
-                                            "id": "value_count",
+                                            "id": "VALUE0",
                                             "title": {
                                                 "EN": "Value"
                                             },
@@ -4295,7 +4315,7 @@ define(["moment"],function (moment) {
                                         "aggregations": [
                                             {
                                                 "columns": [
-                                                    "value_count"
+                                                    "VALUE0"
                                                 ],
                                                 "rule": "SUM"
                                             }
@@ -4327,7 +4347,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -4638,7 +4658,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -4949,7 +4969,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -5259,7 +5279,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -5570,7 +5590,7 @@ define(["moment"],function (moment) {
                             y: ["value"],
 
                             useDimensionLabelsIfExist: true,// || default raw else fenixtool
-                            aggregationFn: {"value_count": "sum"},
+                            aggregationFn: {"VALUE0": "sum"},
 
                             config: {
                                 chart: {
@@ -5581,7 +5601,7 @@ define(["moment"],function (moment) {
                                         load: function(event) {
                                             // modify the legend symbol from a rect to a line
                                             $('.highcharts-legend-item path').attr('stroke-width', '12').attr('y', '10');
-                                            var label = this.renderer.label(exportRestrictions.notes.exportRestrictionsTimeSeriesGraph.fourth)
+                                            var label = this.renderer.label(exportRestrictions.notes.exportRestrictionsTimeSeriesGraph.fifth)
                                                 .css({
                                                     width: '450px',
                                                     margin : '200px',
@@ -5668,7 +5688,7 @@ define(["moment"],function (moment) {
                                 },
 
                                 title : {
-                                    text : exportRestrictions.title.exportRestrictionsTimeSeriesGraph.fourth,
+                                    text : exportRestrictions.title.exportRestrictionsTimeSeriesGraph.fifth,
                                     style: {"fontSize": "15px"},
                                     widthAdjust: -200
                                 },
