@@ -876,7 +876,6 @@ define([
                         policy_type_name= s.custom_code.policy_type.tax_concessions.name;
                         break;
                 }
-                console.log("POLICY INFO 2 : ", policy_type_code, policy_type_name)
 
                 dashboard_confI.items[0].config.config.title.text = {};
                 var uid = '';
@@ -1406,10 +1405,8 @@ define([
                 var postProcess = dashboard_confI.items[0].postProcess;
                 var policy_type_code = postProcess[0].parameters.rows.policytype.codes[0].codes[0];
                 var policy_type_name = '';
-                console.log(s.custom_code.policy_type.biofuel_targets)
                 switch(policy_type_code) {
                     case s.custom_code.policy_type.biofuel_targets.code:
-                        console.log('bbbbbbbbbbbbb')
                         policy_type_name = s.custom_code.policy_type.biofuel_targets.name;
                         break;
                     case s.custom_code.policy_type.domestic_price_regulation.code:
@@ -1428,7 +1425,6 @@ define([
                         policy_type_name= s.custom_code.policy_type.tax_concessions.name;
                         break;
                 }
-                console.log("POLICY INFO 1 : ", policy_type_code, policy_type_name)
 
                 dashboard_confI.items[0].config.config.title.text = {};
                 var uid = '';
@@ -1454,7 +1450,6 @@ define([
 
     PolicyAtGlance.prototype._titleCreation = function(chart, selectionName){
         var title = '';
-        console.log("_titleCreation ", chart, selectionName)
         switch (chart){
             case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_FreqGraph_uid:
                 title = s.BIOFUELS_POLICIES_DETAILED.title.biofuelsPoliciesFreqGraph.first.replace('POLICYTYPENAME', selectionName);
@@ -1476,8 +1471,6 @@ define([
                 title = s.BIOFUELS_POLICIES_DETAILED.title.biofuelsPoliciesTimeSeriesGraph.fourth.replace('POLICYTYPENAME', selectionName);
                 break;
         }
-        console.log(" _titleCreation ")
-        console.log(title)
 
         return title;
     };
