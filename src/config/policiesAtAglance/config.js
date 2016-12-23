@@ -1,6 +1,6 @@
 /*global define*/
 
-define(["moment", "highcharts"],function (moment, Highcharts) {
+define(["moment", "highcharts", "../../nls/labels"],function (moment, Highcharts, labels) {
 
     'use strict';
 

@@ -323,6 +323,7 @@ define([
     function PolicyAtGlance() {
 
         console.clear();
+        console.log(PAGC)
 
         // Load Exporting Module after Highcharts loaded
         //require('highcharts/modules/drilldown')(Highcharts);
@@ -584,6 +585,7 @@ define([
             this.dashboards[this.currentDashboard].dispose();
         }
 
+        console.log(JSON.stringify(new_dashboard_config))
         // console.log(new_dashboard_config)
         var newDashboard = new Dashboard($.extend(true, {environment : this.environment}, new_dashboard_config));
         this.dashboards[this.currentDashboard] = newDashboard;
@@ -592,7 +594,6 @@ define([
     PolicyAtGlance.prototype._createCountryFilter = function(){
 
         //create country filter
-
         return {"CountryCode": [this.id]};
     };
 
@@ -1497,6 +1498,7 @@ define([
         this._disposeDashboards();
 
         _.each(config, _.bind(function (c) {
+            console.log(JSON.stringify(c))
 
             this.dashboards.push(new Dashboard($.extend(true, {
                 environment : this.environment
