@@ -30,9 +30,9 @@ module.exports = sections.map(function (section) {
                 'handlebars': Path.join(__dirname, 'node_modules/handlebars/dist/handlebars.js'),
                 'jquery': Path.join(__dirname, 'node_modules/jquery/dist/jquery'),
                 // required by fenix-ui-uploader
-                "jquery-ui/widget": Path.join(__dirname, 'node_modules/jquery.ui.widget/jquery.ui.widget'),
+                "jquery-ui/widget": Path.join(__dirname, 'node_modules/jquery.ui.widget/jquery.ui.widget')
                 //"fenix-ui-dashboard" : Path.join(__dirname, 'node_modules/fenix-ui-dashboard/src/js/index.js'),
-                //"fenix-ui-chart-creator" : Path.join(__dirname, 'node_modules/fenix-ui-chart-creator/src/js/index.js')
+               // "fenix-ui-chart-creator" : Path.join(__dirname, 'node_modules/fenix-ui-chart-creator/src/js/index.js')
             }
         },
 

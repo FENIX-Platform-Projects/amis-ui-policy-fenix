@@ -315,7 +315,6 @@ define(["moment", "highcharts", "../../nls/labels"],function (moment, Highcharts
                 Year: {
 
                     //className: 'col-md-10',
-
                     selector: {
                         id: "range",
                         format : "YYYYMMDD",

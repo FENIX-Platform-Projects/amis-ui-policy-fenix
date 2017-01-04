@@ -32,7 +32,7 @@ h2{
 }
 
 .navbar-brand {
-  background-image: url(../../src/images/banner-tag.jpg);
+  background-image: url(./img/banner-tag.jpg);
   width: 270px;
   height: 90px;
   position: relative;
@@ -179,7 +179,7 @@ h2{
 .amis-header {
 
   @media (min-width: 992px) {
-    background-image: url(../../src/images/calder-Amis.jpg);
+    background-image: url(./img/calder-Amis.jpg);
     background-position: 100% 0;
     background-repeat: no-repeat;
   }

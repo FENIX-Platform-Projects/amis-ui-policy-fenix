@@ -1,72 +1,31 @@
 // Typo 3 Bootstrap compatibility
 @import 'base/fx-fonts-import';
 
-.fx-sandbox.fao-holder {
-  //@import "fenix-ui-catalog";
-  //@import "fenix-ui-filter";
+//@import "fenix-ui-catalog";
+//@import "fenix-ui-filter";
 
-  //@import 'base/variables';
-  @import 'themes/fx-variables';
-  @import 'utils/fx-utils';
+//@import 'base/variables';
+@import 'themes/fx-variables';
+@import 'utils/fx-utils';
 
-  @import 'base/fx-buttons';
-  @import 'base/fx-fixed-height';
-  @import 'base/fx-fonts-import';
-  @import 'base/fx-icons';
-  @import 'base/fx-radio-checkbox';
-  @import 'base/fx-typography';
-
-
-  //pages
-  @import 'pages/home';
+@import 'base/fx-buttons';
+@import 'base/fx-fixed-height';
+@import 'base/fx-fonts-import';
+@import 'base/fx-icons';
+@import 'base/fx-radio-checkbox';
+@import 'base/fx-typography';
 
 
-  @import 'themes/fx-material-theme-light';
-  @import 'themes/unified-style';
-  @import 'themes/typo3-fix';
+//pages
+@import 'pages/home';
+
+@import "themes/default";
+@import 'themes/fx-material-theme-light';
+@import 'themes/unified-style';
+@import 'themes/typo3-fix';
 
 
-}
-
-// Modal in bootstrap FIX
-
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity .15s linear;
-  transition: opacity .15s linear;
-}
-
-.fade.in {
-  opacity: 1;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000;
-
-}
-
-.modal-backdrop.in {
-  opacity: .5;
-}
-
-.panel-heading a:after {
-  font-family: 'Glyphicons Halflings';
-  content: "\e114";
-  float: right;
-  color: grey;
-}
-
-.panel-heading a.collapsed:after {
-  content: "\e080";
-}
 
 
-.fx-md-viewer-container .popover-title .text-info{
-  font-family: "Open Sans", Arial, Helvetica, Verdana, sans-serif;
-}
+
+

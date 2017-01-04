@@ -21,6 +21,7 @@ define([
 ], function ($, log, _, C, PAGC, template, dashboardTemplate,  basesTemplate, Descriptions, LateralMenuConfig, Dashboard, Filter, FxUtils, Utils, labels, Bridge, Highcharts) {
 
     "use strict";
+    var Clang = C.lang.toLowerCase();
 
     var s = {
         EL: "#policyAtGlance",
@@ -274,35 +275,28 @@ define([
         BIOFUELS_POLICIES_DETAILED : {
             title: {
                 biofuelsPoliciesFreqGraph: {
-                    zero: 'Number of AMIS Countries',
-                    first:'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' policies, disaggregated by policy measure'
+                    zero: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesFreqGraph_zero"],
+                    first:labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesFreqGraph_first"]
                 },
-                // biofuelsPoliciesTimeSeriesGraph2: {
-                //     zero: 'Number of AMIS Countries',
-                //     first: 'Number of AMIS countries with ethanol policies, disaggregated by policy type and policy measure',
-                //     second: 'Number of AMIS countries with biodiesel policies, disaggregated by policy type and policy measure',
-                //     third: 'Number of AMIS countries with biofuel (unspecified) policies, disaggregated by policy type and policy measure',
-                //     fourth: 'Number of AMIS countries with biofuel policies targeted at ethanol, biodiesel or an unspecified type of biofuel, disaggregated by policy type and policy measure'
-                // },
 
                 biofuelsPoliciesTimeSeriesGraph: {
-                    zero: 'Number of AMIS Countries',
-                    first: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on ethanol, disaggregated by policy measure',
-                    second: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on biodiesel, disaggregated by policy measure',
-                    third: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on unspecified biofuel, disaggregated by policy measure',
-                    fourth: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on biofuel, disaggregated by policy measure'
+                    zero: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesTimeSeriesGraph_zero"],
+                    first: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesTimeSeriesGraph_first"],
+                    second: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesTimeSeriesGraph_second"],
+                    third: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesTimeSeriesGraph_third"],
+                    fourth: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_title_biofuelsPoliciesTimeSeriesGraph_fourth"]
                 }
             },
             notes: {
                 biofuelsPoliciesFreqGraph: {
-                    first: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Ethanol, biodiesel and biofuel (unspecified) are mutually exclusive categories.<br>Import measures do not include import tariffs or tariff quotas. <br>Source: AMIS Policy Database',
-                    second: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Ethanol, biodiesel and biofuel (unspecified) are mutually exclusive categories.<br>Source: AMIS Policy Database'
+                    first: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesFreqGraph_first"],
+                    second: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesFreqGraph_second"],
                 },
                 biofuelsPoliciesTimeSeriesGraph: {
-                    first: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
-                    second: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
-                    third: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Unspecified biofuel policies can apply to ethanol and/or biodiesel.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
-                    fourth: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Combination of policies targeted on ethanol, biodiesel and biofuel (unspecified).<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database'
+                    first: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesTimeSeriesGraph_first"],
+                    second: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesTimeSeriesGraph_second"],
+                    third: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesTimeSeriesGraph_third"],
+                    fourth: labels[Clang]["pAg_BIOFUELS_POLICIES_DETAILED_notes_biofuelsPoliciesTimeSeriesGraph_fourth"]
                 }
             }
         },
@@ -310,21 +304,67 @@ define([
         EXPORT_SUBSIDIES : {
             title: {
                 exportSubsidies: {
-                    first: 'Quantity and budgetary outlay export subsidies in COUNTRYNAME for COMMODITYCLASSNAME, commitments and notifications'
+                    first: labels[Clang]["pAg_EXPORT_SUBSIDIES_title_exportSubsidies_first"]
                 }
             }
         },
 
         error : {
-            NO_FILTER_VALUES: 'No filter values'
+            NO_FILTER_VALUES: labels[Clang]["pAg_ERROR_NO_FILTER_VALUES"]
         }
+
+        // BIOFUELS_POLICIES_DETAILED : {
+        //     title: {
+        //         biofuelsPoliciesFreqGraph: {
+        //             //first: labels[Clang]["browse_description"],
+        //             zero: 'Number of AMIS Countries',
+        //             first:'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' policies, disaggregated by policy measure'
+        //         },
+        //         // biofuelsPoliciesTimeSeriesGraph2: {
+        //         //     zero: 'Number of AMIS Countries',
+        //         //     first: 'Number of AMIS countries with ethanol policies, disaggregated by policy type and policy measure',
+        //         //     second: 'Number of AMIS countries with biodiesel policies, disaggregated by policy type and policy measure',
+        //         //     third: 'Number of AMIS countries with biofuel (unspecified) policies, disaggregated by policy type and policy measure',
+        //         //     fourth: 'Number of AMIS countries with biofuel policies targeted at ethanol, biodiesel or an unspecified type of biofuel, disaggregated by policy type and policy measure'
+        //         // },
+        //
+        //         biofuelsPoliciesTimeSeriesGraph: {
+        //             zero: 'Number of AMIS Countries',
+        //             first: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on ethanol, disaggregated by policy measure',
+        //             second: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on biodiesel, disaggregated by policy measure',
+        //             third: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on unspecified biofuel, disaggregated by policy measure',
+        //             fourth: 'Number of AMIS countries with ' + 'POLICYTYPENAME' + ' on biofuel, disaggregated by policy measure'
+        //         }
+        //     },
+        //     notes: {
+        //         biofuelsPoliciesFreqGraph: {
+        //             first: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Ethanol, biodiesel and biofuel (unspecified) are mutually exclusive categories.<br>Import measures do not include import tariffs or tariff quotas. <br>Source: AMIS Policy Database',
+        //             second: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Ethanol, biodiesel and biofuel (unspecified) are mutually exclusive categories.<br>Source: AMIS Policy Database'
+        //         },
+        //         biofuelsPoliciesTimeSeriesGraph: {
+        //             first: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
+        //             second: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
+        //             third: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level.<br>Unspecified biofuel policies can apply to ethanol and/or biodiesel.<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database',
+        //             fourth: 'In Australia, Brazil, Canada, Mexico and US biofuel policies can be implemented at state-level. <br>Combination of policies targeted on ethanol, biodiesel and biofuel (unspecified).<br>Import measures do not include import tariffs or tariff quotas.<br>Source: AMIS Policy Database'
+        //         }
+        //     }
+        // },
+        //
+        // EXPORT_SUBSIDIES : {
+        //     title: {
+        //         exportSubsidies: {
+        //             first: 'Quantity and budgetary outlay export subsidies in COUNTRYNAME for COMMODITYCLASSNAME, commitments and notifications'
+        //         }
+        //     }
+        // },
+        //
+        // error : {
+        //     NO_FILTER_VALUES: 'No filter values'
+        // }
     };
 
     function PolicyAtGlance() {
-
         console.clear();
-        console.log(PAGC)
-
         // Load Exporting Module after Highcharts loaded
         //require('highcharts/modules/drilldown')(Highcharts);
         require('highcharts-no-data-to-display')(Highcharts);
@@ -354,14 +394,14 @@ define([
 
     PolicyAtGlance.prototype._attach = function () {
 
-        $(s.EL).html(template(labels[C.lang.toLowerCase()]));
+        $(s.EL).html(template(labels[Clang]));
     };
 
     PolicyAtGlance.prototype._initVariables = function () {
 
         this.$el = $(s.EL);
 
-        this.lang = C.lang.toLowerCase();
+        this.lang = Clang;
         this.environment = C.ENVIRONMENT;
         this.cache = C.cache;
 
@@ -675,6 +715,9 @@ define([
                 case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_TimeseriesGraph2:
                 case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_TimeseriesGraph3:
                 case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_TimeseriesGraph4:
+                    console.log(filter_values)
+                    console.log(filter_values.values)
+                    console.log(s.FILTER_VALUES.POLICY_TYPE)
                     var policyType_obj = filter_values.values[s.FILTER_VALUES.POLICY_TYPE];
                     result.policy_type_code = policyType_obj[0];
                     break;
@@ -805,7 +848,7 @@ define([
                 dashboard_confI.items[0].postProcess = postProcess;
 
                 var note = '';
-                if(parsed_filter_values.policy_type_code == s.custom_code.import_measures.code){
+                if(parsed_filter_values.policy_type_code == s.custom_code.policy_type.import_measures.code){
                     note = s.BIOFUELS_POLICIES_DETAILED.notes.biofuelsPoliciesFreqGraph.first;
                 }
                 else{
@@ -1463,6 +1506,8 @@ define([
                 title = s.BIOFUELS_POLICIES_DETAILED.title.biofuelsPoliciesTimeSeriesGraph.first.replace('POLICYTYPENAME', selectionName);
                 break;
             case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_TimeseriesGraph2_uid:
+                console.log(s.BIOFUELS_POLICIES_DETAILED.title.biofuelsPoliciesTimeSeriesGraph.second)
+                console.log(selectionName)
                 title = s.BIOFUELS_POLICIES_DETAILED.title.biofuelsPoliciesTimeSeriesGraph.second.replace('POLICYTYPENAME', selectionName);
                 break;
             case s.BIOFUELS_POLICIES_DETAILED_DASHBOARD_TimeseriesGraph3_uid:
@@ -1498,7 +1543,7 @@ define([
         this._disposeDashboards();
 
         _.each(config, _.bind(function (c) {
-            console.log(JSON.stringify(c))
+            // console.log(JSON.stringify(c))
 
             this.dashboards.push(new Dashboard($.extend(true, {
                 environment : this.environment
@@ -1652,8 +1697,9 @@ define([
 
     PolicyAtGlance.prototype._importThirdPartyCss = function () {
 
-        //SANDBOXED BOOTSTRAP
-        require("../css/sandboxed-bootstrap.css");
+        //Bootstrap
+        require('bootstrap/dist/css/bootstrap.css');
+
 
         //dropdown selector
         require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");

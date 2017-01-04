@@ -46,8 +46,9 @@ define([
 
     EditPolicy.prototype._importThirdPartyCss = function () {
 
-        //SANDBOXED BOOTSTRAP
-        require("../css/sandboxed-bootstrap.css");
+        //Bootstrap
+        require('bootstrap/dist/css/bootstrap.css');
+
 
         // //dropdown selector
         // require("../../node_modules/selectize/dist/css/selectize.bootstrap3.css");
